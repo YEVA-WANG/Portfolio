@@ -3,13 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' />
 	<link rel="shortcut icon" href="http://kbius.com/wp-content/uploads/CAD_icon-300x300.png">
 	<link rel="stylesheet" type="text/css" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Resource style -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css?v=1.0.7" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/slicebox.css" />
 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
@@ -19,6 +17,7 @@
 	<body>
 		<header class="cd-header">
 			<div id="cd-logo">
+				<img src="img/avatar68x68.png">
 				<h1>YEVA - PORTFOLIO</h1>
 			</div>
 			<!--<div id="cd-logo">
@@ -31,14 +30,13 @@
 				<ul>
 					<!-- inser more links here -->
 					<li><a href="javascript:void(0)" class="home"><span style="cursor:pointer">Home</span></a></li>
-					<li><a href="javascript:void(0)" class="about"><span style="cursor:pointer">About</span></a></li>
 					<li class="dropdown">
 						<a href="javascript:void(0)" class="dropbtn"><span style="cursor:pointer">Projects</span></a>
 						<div class="dropdown-content" id="myDropdown">
-				      <a href="javascript:void(0)" id="project_1">Project 1</a>
-				      <a href="javascript:void(0)" id="project_2">Project 2</a>
-				      <a href="javascript:void(0)" id="project_3">Project 3</a>
-				      <a href="javascript:void(0)" id="project_4">Project 4</a>
+				      <a href="javascript:void(0)" id="project_1">Medical Centre</a>
+				      <a href="javascript:void(0)" id="project_2">Dealership Design</a>
+				      <a href="javascript:void(0)" id="project_3">Office Building</a>
+				      <a href="javascript:void(0)" id="project_4">Residential</a>
 				    </div>
 					</li>
 					<li><a href="javascript:void(0)" class="contactMe"><span style="cursor:pointer">Contact</span></a></li>
@@ -48,53 +46,67 @@
 
 		<main class="cd-main-content">
 			<div class="cd-fixed-bg cd-bg-1">
+				<!--<p id="program">Architecture Construction Engineering Technology(coop)</p>
+				<p id="certification">Certification: HRAI - License Number: 13667</p>-->
 			</div> <!-- cd-fixed-bg -->
 			<div class="cd-scrolling-bg cd-color-1">
 				<div class="wrapper project_odd_plus animation-element slide-left">
 					<ul id="sb-slider" class="sb-slider">
 						<li>
-							<img src="Project1/A2.jpg" alt="image1"/>
+							<img src="Project1/medical_center.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>FIRST FLOOR</h3>
+								<h3>MEDICAL CENTER</h3>
 							</div>
 						</li>
 						<li>
-							<img src="Project1/A3.jpg" alt="image2"/>
+							<img src="Project1/A1.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>EAST ELEVATION</h3>
+								<h3>FLOOR PLAN,SECTION,DETAILS</h3>
 							</div>
 						</li>
 						<li>
-							<img src="Project1/A3-01.png" alt="image1"/>
+							<img src="Project1/A2.jpg" alt="image2"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>FLOOR PLAN,SECTION,ISOMETRIC</h3>
 							</div>
 						</li>
 						<li>
-							<img src="Project1/A3-01.png" alt="image1"/>
+							<img src="Project1/A3.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>ELEVATIONS,BUILDING SECTIONS</h3>
 							</div>
 						</li>
+					
 						<li>
 							<img src="Project1/A4.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>FROUNT EXTERIOR RENDERING</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project1/A5.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>SIDE EXTERIOR RENDRING</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project1/A6.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>PRESPECTIVE RENDERING</h3>
 							</div>
 						</li>
-
+						<li>
+							<img src="Project1/A7.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>XXXXXXX</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project1/A8.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>XXXXXXXX</h3>
+							</div>
+						</li>
 					</ul>
 					<div id="shadow" class="shadow"></div>
 					<div id="nav-arrows" class="nav-arrows">
@@ -102,50 +114,77 @@
 						<a href="#">Previous</a>
 					</div>
 				</div>
-				<div class="project_detail animation-element1 slide-right">
-					<p>Porject Detail</p>
+				<div class="project_detail_odd animation-element-detail slide-right">
+					<p style="margin-left: 30px;">FOUR STORYS MEDICAL CENTRE<br/>Create a 3 Dimensional Information Model that will be used to create construction documents, as well as coordinate the multiple disciplines involved in industrial, commercial and institutional projects. and using Revit creating an intelligent building information model of a multi-story commercial project.Create photo-realistic presentation graphics from a Building Information Model</p>
 				</div>
 			</div> <!-- cd-scrolling-bg -->
 
 			<div class="cd-fixed-bg cd-bg-2">
 			</div> <!-- cd-fixed-bg -->
 			<div class="cd-scrolling-bg cd-color-2">
-				<div class="wrapper project_even animation-element1 slide-right">
+				<div class="project_detail_even animation-element slide-left">
+					<p>TESLA DELERSHIP DESIGN<br/>Site develop a design solution for a small industrial/commercial building incorporating sustainable and responsible design practices.Project takes through the various stages of the design process in order to gain an understanding for the complexities of developing a project on a specific site, to suit a detailed and specific set of owner requirements, and to meet defined construction and cost constraints. Apply safety structural design, and decent architecture feature to achieve LEED Credits and Ontario Building Code by drawing.</p>
+				</div>
+				<div class="wrapper project_even animation-element-img slide-right">
 					<ul id="sb-slider1" class="sb-slider">
+						<li>
+							<img src="Project2/tesla_main.jpg" alt="image1"/></a>
+							<div class="sb-description">
+								<h3>TESLA RENDERING</h3>
+							</div>
+						</li>
 						<li>
 							<img src="Project2/east.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>FIRST FLOOR</h3>
+								<h3>FROUNT ELEVATION</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project2/west.jpg" alt="image2"/>
 							<div class="sb-description">
-								<h3>EAST ELEVATION</h3>
+								<h3>BUILDING SECTION 1</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project2/west1.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>BACK ELEVATION</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project2/section2.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>BIM2 4 STOREY OFFICE NORTH ELEVATION</h3>
+								<h3>BUILDING SECTION2</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project2/north.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>SOUTH ELEVATION</h3>
+								<h3>RIGHT ELEVATION</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project2/main.jpg" alt="image1"/></a>
 							<div class="sb-description">
-								<h3>Groundbreaking Artist</h3>
+								<h3>LEFT ELEVATION</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project2/main_floor.jpg" alt="image1"/></a>
+							<div class="sb-description">
+								<h3>xxxx</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project2/2nd_floor.jpg" alt="image1"/></a>
+							<div class="sb-description">
+								<h3>Lxxx</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project2/site.jpg" alt="image1"/></a>
+							<div class="sb-description">
+								<h3>sxxx</h3>
 							</div>
 						</li>
 					</ul>
@@ -166,25 +205,25 @@
 						<li>
 							<img src="Project3/BS1.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>FIRST FLOOR</h3>
+								<h3>STRUCTURAL PALN</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project3/B1.jpg" alt="image2"/>
 							<div class="sb-description">
-								<h3>EAST ELEVATION</h3>
+								<h3>FLOOR PLAN,SCHEDULES</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project3/B4.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>BUILDING,WALL SECTIONTS,DETAILS</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project3/B5.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>BIM2 4 STOREY OFFICE NORTH ELEVATION</h3>
+								<h3>PLAN AND DETAIL ENLARGEMENTS</h3>
 							</div>
 						</li>
 						<li>
@@ -200,16 +239,34 @@
 						<a href="#">Previous</a>
 					</div>
 				</div>
+				<div class="project_detail_odd animation-element-detail slide-right">
+					<p>Utilize Modular Construction techniques in the preparation of Construction Working Drawings.Describe simple load-bearing, non-combustible construction assemblies.Prepare a partial set of working drawings (architectural and structural) for a given two-storey, load bearing masonry, office building design. Drawings included in this set will be:  Floor plans, Elevations, Wall sections, Wall details, Stair section, Plan details, and Structural drawings. Designed structural and safety building system for building. And checking steel handbook for beam, column and OWSJ apply. Focus analysis the building FRR by using Building Code Part 3.</p>
+				</div>
 			</div> <!-- cd-scrolling-bg -->
 			<div class="cd-fixed-bg cd-bg-4">
 				<!--<h2>Lorem ipsum dolor sit amet.</h2>-->
 			</div> <!-- cd-fixed-bg -->
 			<div class="cd-scrolling-bg cd-color-4">
+				<div class="project_detail animation-element slide-left">
+					<p>Follow the steps involved and meet the time frame set in the development and delivery of these construction drawings and realizes how the marking scheme is tied to these steps.Research, analyze and evolve a set of scale-drawn schematic drawings to show the building's structural system, bearing in mind the requirements of the related mechanical and electrical systems.Identify and assemble trade literature applicable to this work, which can be referred to, for the purposes of detailing.Develop sketch details; sections and plans drawn in CAD to show how an assembly will go together and to decide what drawings must be included on the final set of construction working drawings.designed structural and safety building system for house. And checking OBC Part 9 for column size, beam span and snow loads. Also calculate HRAI heat loss and heat gain.</p>
+				</div>
 				<!--<div class="cd-container">
 					<p></p>
 				</div>--> <!-- cd-container -->
-				<div class="wrapper project_even_plus animation-element1 slide-right">
+				<div class="wrapper project_even_plus animation-element-img slide-right">
 					<ul id="sb-slider3" class="sb-slider">
+						<li>
+							<img src="Project4/product_rendering.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>EXTERIOR PRESPECTION RENDERING</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project4/kitchen.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>KITCHEN PRESPECTION RENDERING</h3>
+							</div>
+						</li>
 						<li>
 							<img src="Project4/1stfloor.jpg" alt="image1"/>
 							<div class="sb-description">
@@ -219,25 +276,55 @@
 						<li>
 							<img src="Project4/2ndfloor.jpg" alt="image2"/>
 							<div class="sb-description">
-								<h3>EAST ELEVATION</h3>
+								<h3>SECOND FLOOR PLAN</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project4/section1.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>WEST ELEVATION</h3>
+								<h3>BUILDING SECTION 1</h3>
 							</div>
 						</li>
 						<li>
 							<img src="Project4/section2.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>BIM2 4 STOREY OFFICE NORTH ELEVATION</h3>
+								<h3>BUILDING SECTION 2</h3>
 							</div>
 						</li>
 						<li>
-							<img src="Project4/main.jpg" alt="image1"/>
+							<img src="Project4/east.jpg" alt="image1"/>
 							<div class="sb-description">
-								<h3>SOUTH ELEVATION</h3>
+								<h3>EAST</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project4/south.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>SOUTH</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project4/west.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>WEST</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project4/north.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>NORTH</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project4/floor_plan.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>FLOOR PLAN</h3>
+							</div>
+						</li>
+						<li>
+							<img src="Project4/house.jpg" alt="image1"/>
+							<div class="sb-description">
+								<h3>HOUSE PLAN</h3>
 							</div>
 						</li>
 					</ul>

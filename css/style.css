@@ -148,13 +148,19 @@ Main components
 }
 .cd-header #cd-logo img {
   //display: block;
-  margin-top: -15px;
-  margin-right: 10px;
+  //margin-top: -15px;
+  //margin-right: 10px;
   //box-shadow:  0px 3px 4px 0px rgba(113, 124, 110, 1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
-  background-color: #9ED9EB;
-
+  //box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  //background-color: #9ED9EB;
+  float: left;
+  margin-top: -22px;
 }
+
+.cd-header #cd-logo h1 {
+  float: right;
+}
+    
 @media only screen and (min-width: 768px) {
   .cd-header {
     height: 70px;
@@ -310,6 +316,24 @@ Main components
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   color: white;
 }
+/*.cd-fixed-bg #program{
+  position: absolute;
+  font-size: xx-large;
+  left: 0%;
+  top: 9%;
+  color: #fff;//#24515F;
+  font-weight: bolder;
+}
+
+.cd-fixed-bg #certification{
+  position: absolute;
+  font-size: xx-large;
+  left: 0%;
+  top: 15%;
+  color: #fff;//#24515F;
+  font-weight: bolder;
+}*/
+
 .main-title{
   top: 27%;
   font-size: 5.5em;
@@ -357,19 +381,19 @@ Main components
 }
 .cd-scrolling-bg.cd-color-1 {
   background-color: #f6f5ef;
-  color: #a6989a;
+  color: #948487; //#a6989a;
 }
 .cd-scrolling-bg.cd-color-2 {
   background-color: #edebde;
-  color: #3d3536;
+  color: #948487; //#3d3536;
 }
 .cd-scrolling-bg.cd-color-3 {
   background-color: #E7E4D3;
-  color: #3d3536;
+  color: #948487; //#3d3536;
 }
 .cd-scrolling-bg.cd-color-4 {
   background-color: #e4e1ce;
-  color: #3d3536;
+  color: #948487; //#3d3536;
 }
 @media only screen and (min-width: 768px) {
   .cd-scrolling-bg {
@@ -396,6 +420,15 @@ Main components
   -o-transform: translate(-100px, 0px);
   -ms-transform: translate(-100px, 0px);
   transform: translate3d(-100px, 0px, 0px);
+  width: 50%;
+  float: left;
+  margin-top: auto;
+}
+
+.animation-element.slide-left p{
+  //width: 50%;
+  //margin-left: 45px;
+  margin-left: 30px;
 }
 
 .animation-element.slide-left.in-view {
@@ -407,7 +440,7 @@ Main components
   transform: translate3d(0px, 0px, 0px);
 }
 
-.animation-element1.slide-right {
+.animation-element-img.slide-right {
   -moz-transition: all 500ms linear;
   -webkit-transition: all 500ms linear;
   -o-transition: all 500ms linear;
@@ -418,10 +451,36 @@ Main components
   -ms-transform: translate(100px, 0px);
   transform: translate3d(100px, 0px, 0px);
   margin-right: 100px;
+  width: 42%;
+  margin-top: auto;
 }
 
 
-.animation-element1.slide-right.in-view {
+.animation-element-img.slide-right.in-view {
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.animation-element-detail.slide-right {
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(100px, 0px, 0px);
+  -webkit-transform: translate3d(100px, 0px, 0px);
+  -o-transform: translate(100px, 0px);
+  -ms-transform: translate(100px, 0px);
+  transform: translate3d(100px, 0px, 0px);
+  margin-right: 100px;
+  //width: 42%;
+  //margin-top: auto;
+}
+
+
+.animation-element-detail.slide-right.in-view {
   -moz-transform: translate3d(0px, 0px, 0px);
   -webkit-transform: translate3d(0px, 0px, 0px);
   -o-transform: translate(0px, 0px);
@@ -430,20 +489,25 @@ Main components
 }
 /*animation slide left styled for testimonials*/
 
-.divider {
-  //border-right: 1px solid #000;
-  border-right: 1px solid #d9d9d9; //#EEE;
-}
-//border-left:1px solid #000;
-
-
-.project_detail {
-  float: left;
-  border-left: 1px solid #d9d9d9;
+.project_detail_odd {
+  //float: left;
+  //border-left: 1px solid #d9d9d9;
 }
 
-.project_detail p{
-    margin-left: 20px;
-    
-    padding-left: 20px;
-  }
+.project_detail_odd p{
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 40%;
+  float: right;
+}
+
+/*.project_detail_even {
+  float: right;
+  border-right: 1px solid #d9d9d9;
+}
+
+.project_detail_odd p{
+  margin-right: 20px;
+  
+  padding-right: 20px;
+}*/
